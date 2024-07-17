@@ -1,0 +1,124 @@
+:root {
+    --f-f-title: "Press Start 2P", system-ui;
+    --f-f-text: "IBM Plex Mono", monospace;
+    --f-w-n: 400;
+    --f-w-b: 700;
+    --f-st-n: normal;
+    --f-sz-n: 1em;
+    --f-sz-l: 1.25em;
+    --f-sz-xl: 1.5em;
+    --c-blanco: #FFFFFF;
+    --c-light: #F5F5F5;
+    --c-dark: #131313;
+    --c-azul: #03318C;
+    --c-morado: #5D04D9;
+}
+
+body {
+    border-color: 2px solid red;
+    background-color: var(--c-light);
+    font-family: var(--f-f-text);
+    font-weight: var(--f-w-n);
+    font-style: var(--f-st-n);
+    color: var(--c-dark);
+    width: 100%;
+    height: 100%;
+}
+
+h1 {
+    font-size: var(--f-sz-xl);
+    font-family: var(--f-f-title);
+}
+
+h2 {
+    font-size: var(--f-sz-l);
+    font-family: var(--f-f-title);
+}
+
+.encabezado {
+    background-color: var(--c-morado);
+    box-shadow: 0px 7px 0.9px 0px rgba(0, 0, 0, 0.25);
+}
+
+.encabezado img {
+    padding: 1em 0;
+}
+
+.rodapie {
+    background: var(--c-morado);
+    box-shadow: 0px -10px 9.5px 0px rgba(0, 0, 0, 0.25);
+}
+
+.rodapie p {
+    color: var(--c-light);
+}
+
+.productos__seccion {
+    padding: 2rem;
+    width: 50%;
+}
+
+.products__container {
+    background-color: var(--c-blanco);
+    border-radius: 10px;
+    box-shadow: 5px 5px 15px 5px rgba(0, 0, 0, 0.25);
+    width: auto;
+    height: auto;
+    overflow: auto;
+}
+
+
+.card {
+    background-color: var(--c-morado);
+    border: 3px solid black;
+    border-radius: 10px;
+    box-shadow: 5px 6px 3.3px 0px rgba(0, 0, 0, 0.25);
+    margin: 1rem;
+}
+
+.card__imagen {
+    background: url(<path-to-image>) var(--c-dark) 50% / cover no-repeat;
+    border: 3px solid black;
+    border-radius: 0.5rem;
+}
+
+.card p {
+    color: var(--c-blanco);
+}
+
+.card__info p,
+.card__info img {
+    color: var(--c-blanco);
+}
+
+button {
+    background-color: var(--c-azul);
+    border: 3px solid var(--c-azul);
+    border-radius: 15px;
+    color: var(--c-light);
+    font-family: var(--f-f-text);
+    font-size: var(--f-sz-n);
+    font-weight: var(--f-w-n);
+    width: 8rem;
+    height: 2.5rem;
+    margin: 0.5rem;
+}
+
+.btn_limpiar {
+    background-color: var(--c-light);
+    border: 3px solid var(--c-azul);
+    color: var(--c-azul);
+}
+
+input {
+    background-color: var(--c-blanco);
+    font-family: var(--f-family);
+    font-size: var(--f-sz-n);
+    color: var(--c-azul);
+    border: 2px solid var(--c-azul);
+    border-radius: var(--f-sz-n);
+    outline: none;
+    width: 100%;
+    padding: 1rem;
+    gap: 1rem;
+}
